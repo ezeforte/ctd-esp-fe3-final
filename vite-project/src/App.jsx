@@ -8,9 +8,9 @@ function App() {
   return (
     <>
       <Routes>
-        <Route> </Route>
+        <Route path='/' element={<Home/>}/>
     
-    </Routes>
+      </Routes>
     </>
   )
 }
