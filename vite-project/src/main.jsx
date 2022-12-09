@@ -6,11 +6,13 @@ import Context from './Context/Context'
 import { BrowserRouter } from 'react-router-dom';
 
 ReactDOM.createRoot(document.getElementById('root')).render(
-    
+
         <BrowserRouter>
-        <Context>
-        {App}
+       <Context>
+        <App />
         </Context>
         </BrowserRouter>
-   
+
 )
+
+

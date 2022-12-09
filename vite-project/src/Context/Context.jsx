@@ -1,10 +1,10 @@
 import axios from "axios";
-import { createContext, useContext, useState, useEffect, useReducer,children } from "react";
+import { createContext, useContext, useState, useEffect, useReducer } from "react";
 //import {apiSwitch} from "../apiSwitch";
 
 const GlobalStates = createContext()
 
-const Context = () => {
+const Context = ({children}) => {
 
     const [data, setData] = useState()
 

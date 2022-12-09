@@ -1,3 +1,4 @@
+import reactLogo from './assets/react.svg'
 import './App.css'
 import { Route, Routes } from 'react-router-dom'
 import Home from './Pages/Home'
@@ -6,13 +7,17 @@ import Navbar from './Components/Navbar'
 function App() {
   return (
     <>
-      <Navbar/>
-      <Routes>
-        <Route path='/' element={<Home/>}/>
+    <Navbar/>
+<Routes>
+<Route path='/' element={<Home/>}/>
+
+</Routes>
     
-      </Routes>
+
+
     </>
   )
 }
 
 export default App
+
