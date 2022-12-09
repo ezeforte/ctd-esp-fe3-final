@@ -9,7 +9,7 @@ const Navbar = () => {
         <button onClick={() => {
             setLoading(true)
             dispatch({type: 'SWITCH_CAT', payload: 'https://api.thecatapi.com/v1/images/search?limit=10'})
-        }}>Switch to cat</button>
+        }}>Switch to caty</button>
         :
         <button onClick={() => {
             setLoading(true)
