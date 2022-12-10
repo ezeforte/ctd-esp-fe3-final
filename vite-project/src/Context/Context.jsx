@@ -4,6 +4,7 @@ import { reducer } from "../reducer/reducer";
 const GlobalStates = createContext()
 
 const initialState = {
+    
     url: 'https://dog.ceo/api/breed/hound/images/random/10',
     api: 'dog'
 }
