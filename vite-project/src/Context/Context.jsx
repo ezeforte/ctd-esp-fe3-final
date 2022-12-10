@@ -5,7 +5,7 @@ const GlobalStates = createContext()
 
 const initialState = {
     
-    url: 'https://dog.ceo/api/breed/hound/images/random/10',
+    url: 'https://jsonplaceholder.typicode.com/users',
     api: 'dog'
 }
 const initialFavState = []

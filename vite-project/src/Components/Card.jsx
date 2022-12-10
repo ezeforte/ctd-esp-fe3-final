@@ -27,9 +27,12 @@ const Card = ({ name, username, id }) => {
         {/* Ademas deberan integrar la logica para guardar cada Card en el localStorage */}
         { loading ? 'Cargando...' :
             
-                data?.message.map(imagen => <div key={imagen} className='card'>
-                <img src={imagen} alt='' width={200}/>
-                <button onClick={() => addFav(imagen)}>⭐</button>
+                data.map(i => <div key={i.id} className='card'>
+                
+                <img src="\public\images\doctor.jpg" alt='' width={100}/>
+                <p>{i.name}</p>
+                <p>{i.username}</p>
+                <button onClick={() => addFav(i.id)}>⭐</button>
                 </div>) 
             
         }
