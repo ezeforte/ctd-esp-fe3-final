@@ -12,7 +12,7 @@ code {
     monospace;
 }
 .favButton{
-  background-color: rgba(136, 136, 136, 0.116);
+  background-color: rgba(136, 136, 136, 0.311);
   padding: 10px;
   border: none;
   cursor: pointer;
@@ -26,7 +26,7 @@ h1{
 nav{
   text-align: right;
   background-color: rgba(227, 226, 226, 0.568);
-  width: 80vw;
+  width: 85vw;
   padding: 1rem;
 }
 
