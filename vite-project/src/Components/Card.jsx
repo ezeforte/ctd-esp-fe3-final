@@ -1,4 +1,4 @@
-
+import { Link, NavLink } from 'react-router-dom'
 import React, { useEffect, useState } from 'react'
 import { useGlobaStates } from '../Context/Context'
 
@@ -20,20 +20,19 @@ const Card = ({ name, username, id }) => {
 
   return (
     <div className="card-section">
-        {/* En cada card deberan mostrar en name - username y el id */}
-
-        {/* No debes olvidar que la Card a su vez servira como Link hacia la pagina de detalle */}
+        
+       
 
         {/* Ademas deberan integrar la logica para guardar cada Card en el localStorage */}
         { loading ? 'Cargando...' :
             
-                data.map(i => <div key={i.id} className='card'>
+                data.map(i => <><Link to=".\Contact"v key={i.id} className='card'>
                 
                 <img src="\public\images\doctor.jpg" alt='' width={100}/>
                 <p>{i.name}</p>
-                <p>{i.username}</p>
+                <p>{i.username} ID: {i.id} </p>
                 <button onClick={() => addFav(i.id)}>⭐</button>
-                </div>) 
+                </Link> </>) 
             
         }
         
