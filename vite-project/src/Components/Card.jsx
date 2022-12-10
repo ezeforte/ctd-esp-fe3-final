@@ -26,7 +26,7 @@ const Card = ({ name, username, id }) => {
         {/* Ademas deberan integrar la logica para guardar cada Card en el localStorage */}
         { loading ? 'Cargando...' :
             
-                data.map(i => <><Link to=".\Contact"v key={i.id} className='card'>
+                data.map(i => <><Link to=".\Detail"v key={i.id} className='card'>
                 
                 <img src="\public\images\doctor.jpg" alt='' width={100}/>
                 <p>{i.name}</p>
