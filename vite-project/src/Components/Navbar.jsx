@@ -10,8 +10,8 @@ const Navbar = () => {
     <nav className='nav'>
     
       <Link to=".\">     Home     </Link>
-      <Link to=".\Contact">     Contact     </Link>
-      <Link to=".\Favs">     Favs    </Link>
+      <Link to=".\contact">     Contact     </Link>
+      <Link to=".\favs">     Favs    </Link>
         
         <button className='favButton' onClick={() => {
             

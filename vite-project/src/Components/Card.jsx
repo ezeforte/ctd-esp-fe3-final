@@ -3,7 +3,7 @@ import React, { useEffect, useState } from 'react'
 import { useGlobaStates } from '../Context/Context'
 
 
-const Card = ({ name, username, id }) => {
+const Card = () => {
 
   const { data, state, loading, setLoading, dispatchFavs } = useGlobaStates()
     
@@ -26,13 +26,16 @@ const Card = ({ name, username, id }) => {
         {/* Ademas deberan integrar la logica para guardar cada Card en el localStorage */}
         { loading ? 'Cargando...' :
             
-                data.map(i => <><Link to=".\Detail"v key={i.id} className='card'>
+                data.map(i => (
+                <Link key={i.id} to={`dentist/${i.id}`}  className='card'>
                 
                 <img src="\public\images\doctor.jpg" alt='' width={100}/>
                 <p>{i.name}</p>
                 <p>{i.username} ID: {i.id} </p>
-                <button onClick={() => addFav(i.id)}>⭐</button>
-                </Link> </>) 
+                <li><button onClick={() => addFav(i.id)}>⭐</button></li>
+                
+                </Link>
+                )) 
             
         }
         
